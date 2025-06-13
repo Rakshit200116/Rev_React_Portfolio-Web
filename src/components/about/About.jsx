@@ -1,9 +1,10 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
 
+
 const About = () => {
   return (
-    <section id='about' className='py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32'>
+    <section id='about' className='py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-0 md:mt-16 lg:mt-8'>
       <div className='flex flex-col-reverse md:flex-row justify-between items-center'>
         {/*Left Side */}
         <div className='md:w-1/2 text-center md:text-left mt-8 md:mt-8'>
@@ -56,6 +57,10 @@ const About = () => {
         </div>
 
         {/**Right Side time Stamp : 1.04.55 */}
+        <div className='md:ml-20 text-white w-1/2 md:w-1/2 flex justify-center md:justify-end '>
+          <img src="src\assets\profile.png" alt="Just a cool guy"
+            className='mb-6 w-full h-full object-cover' />
+        </div>
       </div>
     </section>
   )
