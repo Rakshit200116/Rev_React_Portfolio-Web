@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('./assets/fonts/MyFont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MyFont-2';
+  src: url('./assets/fonts/FearLogo-xR7lV.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MyFont-3';
+  src: url('./assets/fonts/SuperTrivia-DYRw1.ttf') format('truetype');
+}
