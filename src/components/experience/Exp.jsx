@@ -1,8 +1,89 @@
-import React from 'react'
+import React from "react";
+import { experiences } from "../../constant"; // Import your data
 
-const Exp = () => {
-    return (
-    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti qui illo fugit dolorem cupiditate illum consectetur tempore mollitia perferendis maxime fugiat ab repellendus, provident blanditiis quasi corrupti enim, esse nostrum?</div>
-  )
-}
-export default Exp;
+const Experience = () => {
+  return (
+    <section
+      id="experience"
+      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans clip-path-custom-2"
+    >
+      {/* Section Title */}
+      <div className="text-center mb-16">
+        <h2 className="text-4xl font-bold text-white">EXPERIENCE</h2>
+        <div className="w-32 h-1 bg-[#00df81] mx-auto mt-4"></div>
+        <p className="text-gray-400 mt-4 text-lg font-semibold">
+          A collection of my work experience and the roles I have taken in
+          various organizations
+        </p>
+      </div>
+
+      {/* Experience Timeline */}
+      <div className="relative">
+        {/* Vertical line */}
+        <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-[#00df81] h-full"></div>
+
+        {/* Experience Entries */}
+        {experiences.map((experience, index) => (
+          <div
+            key={experience.id}
+            className={`flex flex-col sm:flex-row items-center mb-16 ${
+              index % 2 === 0 ? "sm:justify-end" : "sm:justify-start"
+            }`}
+          >
+  
+
+            {/* Content Section */}
+            <div
+              className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl border border-white bg-[#AACBC4] backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
+                index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"
+              } sm:ml-44 sm:mr-44 ml-8 transform transition-transform duration-300 hover:scale-105`}
+            >
+              {/* Flex container for image and text */}
+              <div className="flex items-center space-x-6">
+                {/* Company Logo/Image */}
+                <div className="w-auto h-16 rounded-md overflow-hidden">
+                  <img
+                    src={`src/assets/${experience.img}.png`}
+                    alt={experience.company}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* Role, Company Name, and Date */}
+                <div className="flex flex-col justify-between">
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-semibold text-[rgb(2,26,27)]">
+                      {experience.role}
+                    </h3>
+                    <h4 className="text-md sm:text-sm text-[rgb(3,98,76)]">
+                      {experience.company}
+                    </h4>
+                  </div>
+                  {/* Date at the bottom */}
+                  <p className="text-sm text-white font-semibold mt-2">{experience.date}</p>
+                </div>
+              </div>
+
+              <p className="mt-4 text-[rgb(6,48,43)]">{experience.desc}</p>
+              <div className="mt-4">
+                <h5 className="font-medium text-black">Skills:</h5>
+                <ul className="flex flex-wrap mt-2">
+                  {experience.skills.map((skill, index) => (
+                    <li
+                      key={index}
+                      className="bg-[#03624C] text-gray-300 px-4 py-1 text-xs sm:text-sm rounded-lg mr-2 mb-2 border border-gray-400"
+                    >
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Experience;

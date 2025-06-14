@@ -23,13 +23,13 @@ const About = () => {
               sequence={[
                 // Same substring at the start will only be typed once, initially
                 'IITian',
-                1000,
+                1200,
                 'Full Stack Developer',
-                1000,
+                1200,
                 'Physicist',
-                1000,
+                1200,
                 'Tech Enthusiast',
-                1000,
+                1200,
               ]}
               speed={50}
               repeat={Infinity}
