@@ -1,46 +1,21 @@
 
 
 export const SkillsInfo = [
-  {
-    title: 'Frontend',
-    skills: [
-      { name: 'HTML', logo: 'htmlogo' },
-      { name: 'CSS', logo: 'csslogo' },
-      { name: 'JavaScript', logo: 'javascriptlogo' },
-      { name: 'React JS', logo: 'reactjslogo' },
-      { name: 'Tailwind CSS', logo: 'tailwindcsslogo' },
-      { name: 'Bootstrap', logo: 'bootstraplogo' },
-      { name: 'Bootstraps', logo: 'bootstraplogo' },
-    ],
-  },
-  {
-    title: 'Backend',
-    skills: [
-      { name: 'Django', logo: 'djangologo' },
-      { name: 'Node JS', logo: 'nodejslogo' },
-      { name: 'Express JS', logo: 'expressjslogo' },
-      { name: 'MongoDB', logo: 'mongodblogo' },
-    ],
-  },
-  {
-    title: 'Languages',
-    skills: [
-      { name: 'C', logo: 'clogo' },
-      { name: 'C++', logo: 'cpplogo' },
-      { name: 'Python', logo: 'pythonlogo' },
-      { name: 'JavaScript', logo: 'javascriptlogo' },
-    ],
-  },
-  {
-    title: 'Tools',
-    skills: [
-      { name: 'Git', logo: 'gitlogo' },
-      { name: 'GitHub', logo: 'githublogo' },
-      { name: 'VS Code', logo: 'vscodelogo' },
-      { name: 'Vercel', logo: 'vercellogo' },
-      { name: 'Figma', logo: 'figmalogo' },
-    ],
-  },
+  
+      { name: 'HTML', logo: 'htmlogo.svg' },
+      { name: 'CSS', logo: 'csslogo.svg' },
+      { name: 'JavaScript', logo: 'javascriptlogo.svg' },
+      { name: 'React JS', logo: 'reactjslogo.svg' },
+      { name: 'Tailwind CSS', logo: 'tailwindcsslogo.svg' },
+      { name: 'Bootstrap', logo: 'bootstraplogo.svg' },
+      { name: 'Django', logo: 'djangologo.svg' },
+      { name: 'C', logo: 'clogo.svg' },
+      { name: 'Python', logo: 'pythonlogo.svg' },
+      { name: 'Git', logo: 'gitlogo.svg' },
+      { name: 'GitHub', logo: 'githublogo.svg' },
+      { name: 'VS Code', logo: 'vscodelogo.svg' },
+      { name: 'Vercel', logo: 'vercel.png' },
+      { name: 'Figma', logo: 'figmalogo.svg' },
 ];
 
   export const experiences = [
