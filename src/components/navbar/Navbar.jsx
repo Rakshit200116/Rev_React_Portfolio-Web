@@ -3,19 +3,24 @@ import { FiX, FiList, FiMenu } from 'react-icons/fi';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const NavBar = () => {
+
   const [isOpen, setisOpen] = useState(false);
   const [activeSection, setactiveSection] = useState("");
   const [isScrolling, setisScrolled] = useState(false);
 
-  const NavMenuClick = (section) => {
-    setactiveSection(section);
+  const NavMenuClick = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setactiveSection(sectionId);
     setisOpen(false);
   }
 
   useEffect(() => {
 
     const handScroll = () => (
-      setisScrolled(window.scrollY > 50)
+      setisScrolled(window.scrollY > 100)
     );
 
     window.addEventListener("scroll", handScroll);
@@ -25,13 +30,13 @@ const NavBar = () => {
   const NavItems = [
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
-    { id: "experience", label: "Experience" },
+    /** { id: "experience", label: "Experience" }, */
     { id: "project", label: "Project" },
     { id: "education", label: "Education" },
   ]
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition duration-00 px-[7vw] lg:px-[20vw] ${isScrolling ? "bg-[rgba(2,27,26,0.5)] bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-md" : "bg-transparent"
+    <nav className={`fixed md:sticky top-0 w-full z-50 transition duration-00 px-[7vw] lg:px-[20vw] ${isScrolling ? "bg-[rgba(2,27,26,0.5)] bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-md" : "bg-transparent"
       }`}>
       <div className={`${isOpen ? "w-full bg-[rgba(2,27,26,.5)]" : "bg-transparent"}`}>
         <div className='text-white py-5 flex justify-between items-center'>
@@ -88,6 +93,16 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
+
+          {/*Social Media Icons */}
+          <div className='flex justify-center pt-4 space-x-4'>
+            <a className='text-gray-300 hover:text-[#00df81] transition duration-700 hover:scale-110' target='_black' href="https://github.com/Rakshit200116">
+              <FaGithub size={24} />
+            </a>
+            <a className='text-gray-300 hover:text-[#00df81] transition duration-700 hover:scale-110' target='_black' href="https://www.linkedin.com/in/rakshit-jain-08866731a/">
+              <FaLinkedin size={24} />
+            </a>
+          </div>
         </div>)}
 
     </nav>

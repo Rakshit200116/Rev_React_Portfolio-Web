@@ -56,7 +56,7 @@ const About = () => {
           </a>
         </div>
 
-        {/**Right Side time Stamp : 1.04.55 */}
+        {/**Right Side */}
         <div className='md:ml-20 text-white w-1/2 md:w-1/2 flex justify-center md:justify-end '>
           <img src="src\assets\profile.png" alt="Just a cool guy"
             className='mb-6 w-full h-full object-cover' />

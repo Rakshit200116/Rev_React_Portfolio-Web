@@ -4,8 +4,8 @@ import { SkillsInfo } from '../../constant'
 const Skills = () => {
     return (
         <section id='skills'
-            className='mt-20 py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans
-    bg-gradient-to-b from-[#021B1A] via-[#032221] to-[#03624C] clip-path-custom'>
+            className='py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans
+    bg-gradient-to-b from-[#021B1A] to-[#063028] clip-path-custom'>
 
             {/**SKILLS Heading */}
             <div className='text-center mb-8'>
@@ -19,11 +19,11 @@ const Skills = () => {
                 {SkillsInfo.map((category) => (
                     <div key={category.id}>
                         <img
-                            className='h-15 sm:h-20 '
+                            className='h-15 sm:h-20 hover:animate-spin'
                             src={`src/assets/${category.logo}`} alt="" />
                         <div>
                             <h3 key={category.id}
-                                className='text-center mt-2 text-gray-400 font-bold'>
+                                className='text-center mt-2 text-[#00df81] font-bold'>
                                 {category.name}
                             </h3>
                         </div>

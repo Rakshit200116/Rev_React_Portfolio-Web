@@ -12,21 +12,21 @@ const BlurBlob = ({ position, size }) => {
                 height: height,
                 transform: 'translate(-50%,-50%)'
             }}>
-            <div className='w-full h-full bg-[#00df81] rounded-full opacity-20 blur-3xl animate-blob'>
+            <div className='w-full h-full bg-[#00df81] rounded-3xl opacity-20 blur-3xl animate-blob'>
 
             </div>
         </div>
     )
 }
 
-BlurBlob.PropTypes ={
-    position : PropTypes.shape({
-        top:PropTypes.string,
-        left:PropTypes.string,
+BlurBlob.PropTypes = {
+    position: PropTypes.shape({
+        top: PropTypes.string,
+        left: PropTypes.string,
     }),
     size: PropTypes.shape({
-        width:PropTypes.string,
-        height:PropTypes.string,
+        width: PropTypes.string,
+        height: PropTypes.string,
     })
 }
 export default BlurBlob

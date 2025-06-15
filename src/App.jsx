@@ -1,6 +1,6 @@
 import React from 'react'
 import Skills from './components/skills/Skills'
-import Navbar  from './components/navbar/navbar';
+import NavBar from './components/navbar/Navbar';
 import About from './components/about/About';
 import Exp from './components/experience/Exp';
 import Projects from './components/projects/Projects';
@@ -10,15 +10,20 @@ import Footer from './components/footer/Footer';
 import BlurBlob from '../BlurBlob';
 
 const App = () => {
-  return(
+  return (
     <div className='bg-[#021B1A]'>
-        <BlurBlob position={{top : '35%',left:'20%'}} size = {{width:'30%',height : '40%'}}></BlurBlob>
-        <div className='relative pt-20'>
-            <Navbar/>
-            <About/>
-            <Skills/>
-            {/**<Exp/> */}
-        </div>
+      <BlurBlob position={{ top: '50%', left: '30%' }} size={{ width: '30%', height: '60%' }}></BlurBlob>
+
+      <div className='relative pt-20 md:pt-10'>
+        <NavBar />
+        <About />
+        <Skills />
+        {/**<Exp/> */}
+        <Projects />
+        <Education />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 };
