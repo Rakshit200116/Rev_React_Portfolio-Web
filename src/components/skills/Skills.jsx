@@ -17,7 +17,8 @@ const Skills = () => {
 
             <div className="grid grid-cols-4 md:grid-cols-6 gap-4 justify-items-center mt-10">
                 {SkillsInfo.map((category) => (
-                    <div key={category.id}>
+                    <div
+                        key={category.id}>
                         <img
                             className='h-15 sm:h-20 hover:animate-spin'
                             src={`src/assets/${category.logo}`} alt="" />

@@ -59,7 +59,7 @@ const Projects = () => {
         {/**Detailed Container */}
         {ProjectOpen && (
           <div className="fixed inset-0 z-50 flex justify-center backdrop-blur-md bg-opacity-90 p-8">
-            <div className="bg-gray-400 rounded-xl shadow-2xl lg:w-full w-[70%] max-w-2xl overflow-y-scroll relative">
+            <div className="bg-[#AACBC4] rounded-xl shadow-2xl lg:w-full w-[70%] max-w-2xl overflow-y-scroll relative">
               <div className='flex justify-end pr-4 pt-2'>
                 <button
                   onClick={() => (ProjectClick(null))}
@@ -74,10 +74,10 @@ const Projects = () => {
                   src={`src/assets/${ProjectOpen.image}.png`} alt="" />
               </div>
               <div className='px-8'>
-                <h1 className='text-white text-2xl font-bold '>
+                <h1 className='text-[#021B1A] text-2xl font-bold '>
                   {ProjectOpen.title}
                 </h1>
-                <p className='py-4 text-gray-100'>
+                <p className='py-4 text-white'>
                   {ProjectOpen.description}
                 </p>
                 {ProjectOpen.tags.map((tag, index) => (
@@ -88,19 +88,19 @@ const Projects = () => {
                   </span>
                 ))}
                 <div className='flex justify-center mb-8 gap-8'>
-                  <a href="" target='_blank'
+                  <a href={ProjectOpen.github} target='_blank'
                     className='w-[50%] text-center text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-700 hover:scale-110'
                     style={{
                       background: '#03624C',
-                      boxShadow: '0 0 2px rgb(2,27,26), 00 2px rgb(2,27,26), 0 0 40px white'
+                      boxShadow: '0 0 2px rgb(2,27,26), 00 2px rgb(2,27,26)'
                     }}>
                     Github
                   </a>
-                  <a href="" target='_blank'
+                  <a href={ProjectOpen.webapp} target='_blank'
                     className='w-[50%] text-center text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-700 hover:scale-110'
                     style={{
                       background: '#03624C',
-                      boxShadow: '0 0 2px rgb(2,27,26), 00 2px rgb(2,27,26), 0 0 40px white'
+                      boxShadow: '0 0 2px rgb(2,27,26), 00 2px rgb(2,27,26)'
                     }}>
                     Live
                   </a>

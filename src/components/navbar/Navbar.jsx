@@ -33,6 +33,7 @@ const NavBar = () => {
     /** { id: "experience", label: "Experience" }, */
     { id: "project", label: "Project" },
     { id: "education", label: "Education" },
+    { id: "contact", label: "Contact" },
   ]
 
   return (
@@ -42,7 +43,8 @@ const NavBar = () => {
         <div className='text-white py-5 flex justify-between items-center'>
 
           {/* Logo */}
-          <div className='text-xl font-extrabold cursor-pointer'>
+          <div className='text-xl font-extrabold cursor-pointer'
+            onClick={() => (NavMenuClick('about'))}>
             <span className="text-[#00DF81] ">Rak</span>
             <span className='text-white ' >Shit </span>
             <span className='text-[#00DF81] '>Jain</span>
@@ -53,7 +55,7 @@ const NavBar = () => {
             {NavItems.map((item) => (
               <li onClick={() => NavMenuClick(item.id)}
                 key={item.id}
-                className={`font-semibold cursor-pointer hover:text-[#00DF81] transition-transform duration-700 hover:scale-110 ${activeSection === item.id ? "scale-110 text-[#00DF81]" : ""}`}>
+                className={`font-semibold cursor-pointer hover:text-[#00DF81] transition-transform duration-300 hover:scale-110 ${activeSection === item.id ? "scale-110 text-[#00DF81]" : ""}`}>
                 {item.label}
               </li>
             ))}
@@ -61,10 +63,10 @@ const NavBar = () => {
 
           {/*Social Media Icons */}
           <div className='hidden md:flex space-x-4'>
-            <a className='text-gray-300 hover:text-[#00df81] transition duration-700 hover:scale-110' target='_black' href="https://github.com/Rakshit200116">
+            <a className='text-gray-300 hover:text-[#00df81] transition duration-300 hover:scale-110' target='_black' href="https://github.com/Rakshit200116">
               <FaGithub size={24} />
             </a>
-            <a className='text-gray-300 hover:text-[#00df81] transition duration-700 hover:scale-110' target='_black' href="https://www.linkedin.com/in/rakshit-jain-08866731a/">
+            <a className='text-gray-300 hover:text-[#00df81] transition duration-300 hover:scale-110' target='_black' href="https://www.linkedin.com/in/rakshit-jain-08866731a/">
               <FaLinkedin size={24} />
             </a>
           </div>
