@@ -21,7 +21,7 @@ const Skills = () => {
                         key={category.id}>
                         <img
                             className='h-15 sm:h-20 hover:animate-spin'
-                            src={`src/assets/${category.logo}`} alt="" />
+                            src={`/assets/${category.logo}`} alt="" />
                         <div>
                             <h3 key={category.id}
                                 className='text-center mt-2 text-[#00df81] font-bold'>

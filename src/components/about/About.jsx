@@ -58,7 +58,7 @@ const About = () => {
 
         {/**Right Side */}
         <div className='md:ml-20 text-white w-1/2 md:w-1/2 flex justify-center md:justify-end '>
-          <img src="src\assets\profile.png" alt="Just a cool guy"
+          <img src="\assets\profile.png" alt="Just a cool guy"
             className='mb-6 w-full h-full object-cover' />
         </div>
       </div>

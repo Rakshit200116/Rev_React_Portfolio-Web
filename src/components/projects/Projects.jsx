@@ -34,7 +34,7 @@ const Projects = () => {
             <div className='p-4'>
               <img
                 className='w-full h-48 object-cover rounded-xl'
-                src={`src/assets/${project.image}.png`} alt={project.title} />
+                src={`/assets/${project.image}.png`} alt={project.title} />
             </div>
             <div className='px-6'>
               <h3 className='text-2xl font-bold text-white mb-2'>
@@ -71,7 +71,7 @@ const Projects = () => {
               <div className='rounded-3xl flex justify-center p-4'>
                 <img
                   className='rounded-2xl border-2 border-white'
-                  src={`src/assets/${ProjectOpen.image}.png`} alt="" />
+                  src={`/assets/${ProjectOpen.image}.png`} alt="" />
               </div>
               <div className='px-8'>
                 <h1 className='text-[#021B1A] text-2xl font-bold '>

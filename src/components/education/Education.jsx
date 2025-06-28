@@ -1,6 +1,7 @@
 import React from 'react'
 import { education } from '../../constant';
 
+
 const Education = () => {
   return (
     <section
@@ -39,7 +40,7 @@ const Education = () => {
                 {/* School Logo/Image */}
                 <div className="w-35 h-27 flex justify-center items-center overflow-hidden">
                   <img
-                    src={`src/assets/${edu.img}`}
+                    src={`/assets/${edu.img}.png`}
                     alt={edu.school}
                     className="w-auto h-auto object-cover"
                   />
