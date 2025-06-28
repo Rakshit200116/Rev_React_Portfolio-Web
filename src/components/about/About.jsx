@@ -24,11 +24,13 @@ const About = () => {
                 // Same substring at the start will only be typed once, initially
                 'IITian',
                 1200,
-                'Full Stack Developer',
+                'React Developer',
                 1200,
-                'Physicist',
+                'Django Developer',
                 1200,
                 'Tech Enthusiast',
+                1200,
+                'Job Seeker',
                 1200,
               ]}
               speed={50}
@@ -38,11 +40,7 @@ const About = () => {
 
           {/**About me para */}
           <p className='text-base sm:text-lg md:text-lg text-gray-300 mb-10 mt-8 leading-relaxed'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            A quis, nisi earum optio ipsum incidunt nostrum, quod re
-            pellendus est accusantium natus blanditiis tempora
-            fugiat cumque necessitatibus consectetur repudiandae
-            impedit omnis.
+            I am a passionate and dedicated web developer with a self learned foundation in both front-end and back-end technologies. I have a keen interest in creating dynamic and responsive web applications that provide an exceptional user experience. My expertise includes React, Django, and various other technologies, allowing me to build robust and scalable solutions.
           </p>
 
           {/**Resume Button */}
