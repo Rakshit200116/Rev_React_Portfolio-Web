@@ -46,7 +46,7 @@ const About = () => {
           </p>
 
           {/**Resume Button */}
-          <a href="" target='_blank'
+          <a href='\assets\resume_webdev.pdf' target='_blank'
             className='inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-700 hover:scale-110'
             style={{
               background: '#03624C',
