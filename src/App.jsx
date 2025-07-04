@@ -2,7 +2,6 @@ import React from 'react'
 import Skills from './components/skills/Skills'
 import NavBar from './components/navbar/Navbar';
 import About from './components/about/About';
-import Exp from './components/experience/Exp';
 import Projects from './components/projects/Projects';
 import Education from './components/education/Education';
 import Contact from './components/contact/Contact';

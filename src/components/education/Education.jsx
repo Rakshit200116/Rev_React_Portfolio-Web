@@ -6,7 +6,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="bg-gradient-to-b from-[#021B1A] to to-[#095544] py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans clip-path-custom-1"
+      className="bg-gradient-to-b from-[#021B1A] to to-[#095544] py-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans clip-path-custom-1"
     >
       {/* Section Title */}
       <div className="text-center mb-16">

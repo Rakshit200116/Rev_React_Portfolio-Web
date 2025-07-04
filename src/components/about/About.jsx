@@ -30,8 +30,6 @@ const About = () => {
                 1200,
                 'Tech Enthusiast',
                 1200,
-                'Job Seeker',
-                1200,
               ]}
               speed={50}
               repeat={Infinity}
