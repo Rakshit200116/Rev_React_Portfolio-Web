@@ -88,14 +88,6 @@ const Projects = () => {
                   </span>
                 ))}
                 <div className='flex justify-center mb-8 gap-8'>
-                  <a href={ProjectOpen.github} target='_blank'
-                    className='w-[50%] text-center text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-700 hover:scale-110'
-                    style={{
-                      background: '#03624C',
-                      boxShadow: '0 0 2px rgb(2,27,26), 00 2px rgb(2,27,26)'
-                    }}>
-                    Github
-                  </a>
                   <a href={ProjectOpen.webapp} target='_blank'
                     className='w-[50%] text-center text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-700 hover:scale-110'
                     style={{

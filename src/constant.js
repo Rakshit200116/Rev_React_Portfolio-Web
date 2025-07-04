@@ -41,7 +41,15 @@ export const SkillsInfo = [
   ];
   
   export const projects = [
-  
+  {
+      id: 1,
+      title: "Photographer Portfolio",
+      description:
+        "A fast, responsive photography portfolio built using React, Vite, and Tailwind CSS.Showcases categorized image galleries with smooth transitions and a clean, modern UI.Optimized for both desktop and mobile viewing.Built with performance and elegance in mind.",
+      image: 'photo',
+      tags: [ "REACT", "VITE", "CSS", "JavaScript","TWAILWINDCSS"],
+      webapp: "https://photo-portfolio-web.vercel.app/",
+    },
     {
       id: 2,
       title: "Weather App",
@@ -49,7 +57,6 @@ export const SkillsInfo = [
         "A Django-Python based application displays the Real-time weather of the entered city using the OpenWeather API and also displays the first image on google in the background using Google Search API.",
       image: 'weatherapp',
       tags: [ "API", "HTML", "CSS", "JavaScript","Django","Python"],
-      github: "https://github.com/Rakshit200116/Rev_Django_Pro2",
       webapp: "",
     },
   ]
