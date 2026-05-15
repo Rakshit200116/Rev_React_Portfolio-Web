@@ -43,7 +43,7 @@ export const SkillsInfo = [
   export const projects = [{
       id: 1,
       title
-        : "Intern Porta;",
+        : "Intern Portal",
       description:
         "A React-tailwindCSS frontend and SupaBase backend application, made for the Research Cell, IIT BHU. It enables Students to apply for Internships and Project provided by the Faculty",
       image: 'RCPortal',
