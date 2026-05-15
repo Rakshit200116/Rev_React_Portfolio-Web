@@ -40,9 +40,18 @@ export const SkillsInfo = [
     },
   ];
   
-  export const projects = [
-  {
+  export const projects = [{
       id: 1,
+      title
+        : "Intern Porta;",
+      description:
+        "A React-tailwindCSS frontend and SupaBase backend application, made for the Research Cell, IIT BHU. It enables Students to apply for Internships and Project provided by the Faculty",
+      image: 'RCPortal',
+      tags: [ "Supabase", "HTML", "CSS", "JavaScript","React","TailwindCSS"],
+      webapp: "https://research-project-portal.vercel.app/#",
+    },
+  {
+      id: 2,
       title: "Photographer Portfolio",
       description:
         "A fast, responsive photography portfolio built using React, Vite, and Tailwind CSS.Showcases categorized image galleries with smooth transitions and a clean, modern UI.Optimized for both desktop and mobile viewing.Built with performance and elegance in mind.",
@@ -51,7 +60,7 @@ export const SkillsInfo = [
       webapp: "https://photo-portfolio-web.vercel.app/",
     },
     {
-      id: 2,
+      id: 3,
       title: "Weather App",
       description:
         "A Django-Python based application displays the Real-time weather of the entered city using the OpenWeather API and also displays the first image on google in the background using Google Search API.",
